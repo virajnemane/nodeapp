@@ -27,8 +27,6 @@ services:
       - '27017'
     networks:
       - 'backend'
-    volumes:
-      - ./mongodata:/data/db
   nginx:
     container_name: nginx
     build: ./nginx
